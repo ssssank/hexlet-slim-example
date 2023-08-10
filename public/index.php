@@ -20,4 +20,8 @@ $app->post('/users', function ($request, $response) {
     return $response->write('POST /users');
 });
 
+$app->post('/domains', function ($request, $response) {
+    return $response->withStatus(302);
+});
+
 $app->run();
